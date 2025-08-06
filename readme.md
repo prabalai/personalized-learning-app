@@ -42,27 +42,14 @@ Storage	CSV (now), SQLite (planned)
 🚀 Run the App
 Clone the repo
 
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/personalized-learning-app.git
 cd personalized-learning-app
 Install dependencies
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Run the Streamlit app
-
-bash
-Copy
-Edit
 streamlit run app.py
 📁 Project Structure
-bash
-Copy
-Edit
 personalized_learning_app/
 ├── app.py                  # Streamlit app
 ├── requirements.txt        # All dependencies
