@@ -1,74 +1,70 @@
-📚 Personalized Learning System
-An AI-powered Streamlit-based learning app that classifies students by learning type and recommends the next best learning activity (quiz, video, tutorial).
+# 🧠 Personalized Learning App
 
-✅ Current Features (Phase 1 - Complete)
-🧠 Student Profiling using KMeans
-Cluster students based on quiz performance (score, time, hints used).
+An AI-powered Streamlit-based learning system that classifies students by learning type and recommends their next best activity (quiz, video, or tutorial).
 
-🔍 Personalized Recommendations
-A Decision Tree model predicts what the student should do next — quiz, tutorial, or challenge.
+---
 
-📊 Simulated Dataset (1000 students)
-Created with realistic student behavior to test the pipeline.
+## ✅ Phase 1 Features (Completed)
 
-🧪 Interactive Streamlit UI
-Students take a quiz and receive real-time personalized suggestions.
+- 🎯 **Student Profiling**: KMeans clustering based on quiz performance (score, time, hints used)
+- 📊 **Personalized Recommendations**: Decision Tree model recommends next step — quiz, tutorial, or challenge
+- 📁 **Simulated Dataset**: Includes 1000 students with realistic learning behavior
+- 💻 **Interactive UI**: Real-time personalized suggestions after taking quizzes
 
-🚧 In Progress (Phase 2 - Ongoing)
-📂 Dataset Integration (EdNet)
-Adding real-world student learning data to improve personalization.
+---
 
-⚙️ MLOps with MLflow
-Logging experiments, tracking metrics, and managing model versions.
+## 🚧 Phase 2 Features (In Progress)
 
-🔐 Login & Session Storage
-Student session data saved using CSV/SQLite for persistent progress tracking.
+- 📂 **Real-World Dataset Integration** (EdNet)
+- 📦 **MLOps with MLflow**: Logging, tracking, and managing model versions
+- 🔐 **Login & Session Tracking**: Using CSV/SQLite
+- 🧠 **AI Notes Generator**: Hugging Face transformers to generate short notes
+- 📈 **Progress Dashboard**: Visualizations for score trends, time analysis, and learning gaps
 
-📝 AI Notes Generator
-Automatically generate short notes using Hugging Face Transformers.
+---
 
-📈 Progress Dashboard
-Charts for score trends, time analysis, and learning gaps.
+## 🧰 Tech Stack
 
-🧰 Tech Stack
-Layer	Tools Used
-UI & Frontend	Streamlit
-ML Models	scikit-learn (KMeans, DecisionTree)
-AI Text Gen	HuggingFace Transformers (optional)
-Dataset	Simulated CSV, EdNet (coming soon)
-Logging & MLOps	MLflow (coming soon)
-Storage	CSV (now), SQLite (planned)
+- **Frontend/UI**: Streamlit
+- **ML Models**: Scikit-learn (KMeans, DecisionTree)
+- **AI Text Generation**: Hugging Face Transformers (planned)
+- **Data**: Simulated CSV (EdNet planned)
+- **Storage**: CSV (now), SQLite (planned)
+- **MLOps**: MLflow (coming soon)
 
-🚀 Run the App
-Clone the repo
+---
 
-git clone https://github.com/yourusername/personalized-learning-app.git
+## 🚀 How to Run the App
+
+```bash
+# Clone the repository
+git clone https://github.com/prabalai/personalized-learning-app.git
 cd personalized-learning-app
-Install dependencies
 
+# Install dependencies
 pip install -r requirements.txt
-Run the Streamlit app
+
+# Run the Streamlit app
 streamlit run app.py
+
 📁 Project Structure
 personalized_learning_app/
-├── app.py                  # Streamlit app
-├── requirements.txt        # All dependencies
-├── README.md               # Project overview
-│
+├── app.py                # Main Streamlit app
+├── requirements.txt      # Dependencies
+├── README.md             # Project overview
 ├── data/
-│   └── quiz_data.csv       # Sample quiz questions
-│
+│   └── quiz_data.csv     # Sample quiz questions
 ├── models/
 │   └── decision_tree_model.pkl
-│
-└── utils/
-    ├── ml_utils.py
-    ├── session_handler.py
-    └── note_generator.py
-🙌 Author
+├── utils/
+│   ├── ml_utils.py
+│   ├── session_handler.py
+│   └── note_generator.py
+
+👤 Author
 Prabal Singh
 BTech in Artificial Intelligence and Data Science
 Aspiring Data Scientist | Building GenAI + MLOps Projects
 
-📜 License
-MIT License – free to use, just give credit 🙌
+📄 License
+This project is licensed under the MIT License — free to use, just give credit! 🙌
