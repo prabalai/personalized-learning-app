@@ -1,0 +1,8 @@
+# Ignore system folders
+AppData/
+*.tmp
+*.log
+*.DS_Store
+__pycache__/
+*.pyc
+.vscode/

@@ -1,0 +1,11 @@
+question_id,topic,grade_level,difficulty,question,option_a,option_b,option_c,option_d,correct_option,hint
+1,Algebra,10,Easy,"Solve x + 3 = 5",x=8,x=2,x=1,x=3,B,Subtract 3 from both sides.
+2,Algebra,10,Medium,"If 2x = 10, what is x?",x=20,x=5,x=2,x=8,B,Divide both sides by 2.
+3,Fractions,8,Easy,"What is 1/2 of 8?",4,2,6,8,A,Divide 8 by 2.
+4,Fractions,8,Medium,"What is 3/4 of 16?",8,10,12,6,C,Multiply 16 by 0.75.
+5,Geometry,9,Easy,"What is the sum of angles in a triangle?",90,120,180,360,C,Triangle has 180 degrees.
+6,Geometry,9,Medium,"A square has side 4. Find area.",8,12,16,20,C,Area is side × side.
+7,Physics,11,Easy,"Speed = distance/time. If distance=100m, time=10s?",5 m/s,10 m/s,20 m/s,15 m/s,B,Divide distance by time.
+8,Physics,11,Medium,"An object weighs 20N on Earth. Weight on Moon (1/6 g)?",3.3N,6N,12N,20N,A,Weight is 1/6 on Moon.
+9,Climate Change,9,Easy,"Which gas is a greenhouse gas?",Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,C,Think of CO2 emissions.
+10,Climate Change,9,Medium,"What is global warming?",Cooling of Earth,Increase in Earth's temperature,Volcanic eruption,Seasonal cycle,B,Rising average temperature.
