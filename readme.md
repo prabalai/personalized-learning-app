@@ -1,70 +1,81 @@
-# 🧠 Personalized Learning App
+# Personalized Learning App
 
-An AI-powered Streamlit-based learning system that classifies students by learning type and recommends their next best activity (quiz, video, or tutorial).
+An AI-driven learning system that profiles students using KMeans clustering and delivers personalized recommendations — quiz, tutorial, or challenge — via a real-time Streamlit interface.
 
----
-
-## ✅ Phase 1 Features (Completed)
-
-- 🎯 **Student Profiling**: KMeans clustering based on quiz performance (score, time, hints used)
-- 📊 **Personalized Recommendations**: Decision Tree model recommends next step — quiz, tutorial, or challenge
-- 📁 **Simulated Dataset**: Includes 1000 students with realistic learning behavior
-- 💻 **Interactive UI**: Real-time personalized suggestions after taking quizzes
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🚧 Phase 2 Features (In Progress)
+## What it does
 
-- 📂 **Real-World Dataset Integration** (EdNet)
-- 📦 **MLOps with MLflow**: Logging, tracking, and managing model versions
-- 🔐 **Login & Session Tracking**: Using CSV/SQLite
-- 🧠 **AI Notes Generator**: Hugging Face transformers to generate short notes
-- 📈 **Progress Dashboard**: Visualizations for score trends, time analysis, and learning gaps
+**Student profiling** — KMeans clustering segments students by quiz score, time-on-task, and hints used, assigning each to a learning archetype.
 
----
+**Personalized recommendations** — A Decision Tree classifier maps each cluster to an optimal next step: quiz, tutorial, or challenge. Recommendations update in real time after every quiz submission.
 
-## 🧰 Tech Stack
-
-- **Frontend/UI**: Streamlit
-- **ML Models**: Scikit-learn (KMeans, DecisionTree)
-- **AI Text Generation**: Hugging Face Transformers (planned)
-- **Data**: Simulated CSV (EdNet planned)
-- **Storage**: CSV (now), SQLite (planned)
-- **MLOps**: MLflow (coming soon)
+**Simulated dataset** — 1,000 students with realistic behavioral patterns, ready to swap for EdNet in Phase 2.
 
 ---
 
-## 🚀 How to Run the App
+## Roadmap
 
+| Feature | Status |
+|---|---|
+| KMeans student clustering | ✅ Done |
+| Decision Tree recommendations | ✅ Done |
+| Streamlit interactive UI | ✅ Done |
+| MLflow experiment tracking | 🔨 In progress |
+| HuggingFace notes generator | 🔨 In progress |
+| Progress dashboard (score trends, learning gaps) | 🔨 In progress |
+| EdNet real-world dataset integration | 🔨 In progress |
+| Login & session tracking (SQLite) | 🔨 In progress |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| UI | Streamlit |
+| ML Models | Scikit-learn (KMeans, Decision Tree) |
+| NLP / GenAI | HuggingFace Transformers (planned) |
+| MLOps | MLflow (planned) |
+| Storage | CSV → SQLite |
+| Dataset | Simulated CSV → EdNet |
+
+---
+
+## Run locally
 ```bash
-# Clone the repository
+# Clone and install
 git clone https://github.com/prabalai/personalized-learning-app.git
 cd personalized-learning-app
-
-# Install dependencies
 pip install -r requirements.txt
 
-# Run the Streamlit app
+# Launch
 streamlit run app.py
+```
 
-📁 Project Structure
+---
+
+## Project structure
+```
 personalized_learning_app/
-├── app.py                # Main Streamlit app
-├── requirements.txt      # Dependencies
-├── README.md             # Project overview
+├── app.py                    # Streamlit entry point
+├── requirements.txt
 ├── data/
-│   └── quiz_data.csv     # Sample quiz questions
+│   └── quiz_data.csv         # 1,000-student simulated dataset
 ├── models/
 │   └── decision_tree_model.pkl
-├── utils/
-│   ├── ml_utils.py
-│   ├── session_handler.py
-│   └── note_generator.py
+└── utils/
+    ├── ml_utils.py
+    ├── session_handler.py
+    └── note_generator.py
+```
 
-👤 Author
-Prabal Singh
-BTech in Artificial Intelligence and Data Science
-Aspiring Data Scientist | Building GenAI + MLOps Projects
+---
 
-📄 License
-This project is licensed under the MIT License — free to use, just give credit! 🙌
+## About
+
+Built by **Prabal Singh** — BTech in Artificial Intelligence and Data Science, focused on applied GenAI and MLOps projects.
+
+Licensed under MIT.
